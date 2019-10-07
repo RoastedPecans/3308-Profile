@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About Me</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body class="container">
+<h1>Thompson, Connor <small class="text-muted"> - Software Development Tools and Methods</small></h1>
+<div class="card">
+    <p class="card-body">I am a Colorado born and raised student at the University of Colorado - Boulder. I love music, have traveled a
+        fair amount, and have loved all things tech for as long as I can remember. I am studying Computer Science
+        because I find it fascinating and believe it's the wave of the future. It enables anyone anywhere the ability
+        to build whatever they can imagine without costing them any real money, just time, and that's a beautiful thing
+        to me.
+    </p>
+</div>
+<br />
+<h2>My Professional Profile</h2>
+<button class="btn-lg">
+    <a href="https://github.com/roastedpecans" target="_blank">Connor's Github</a>
+</button>
+<br />
+<br />
+<img src="../images/profile.jpg" width="300" height="437" alt="Picture of Me" class="rounded-circle"/><br/>
+<br />
+<h3>My Favorite Projects</h3>
+<table style="border: 1px;" class="table">
+    <tr>
+        <th>Name of Project</th>
+        <th>Technologies Used</th>
+    </tr>
+    <tr>
+        <td>Autolo</td>
+        <td>AWS, Laravel, RESTful API's, Python, Serverless Computing</td>
+    </tr>
+    <tr>
+        <td>Bright Wearables</td>
+        <td>NFC, AWS, Laravel</td>
+    </tr>
+    <tr>
+        <td>Chlandi Waves</td>
+        <td>Python, Matplotlib, Numpy</td>
+    </tr>
+</table>
+<br />
+<div class="row">
+    <div class="collapse card myCollapser col-6">
+    <h5 class="card-title" style="padding-top: 20px;">Countries Traveled</h5>
+    <ul class="card-body">
+        <li>America</li>
+        <li>Mexico</li>
+        <li>England</li>
+        <li>France</li>
+        <li>Germany</li>
+        <li>Italy</li>
+        <li>Belgium</li>
+        <li>Switzerland</li>
+        <li>Netherlands</li>
+        <li>Spain</li>
+    </ul>
+    </div>
+    <div class="collapse card myCollapser col-6">
+    <h5 class="card-title" style="padding-top: 20px;">My Interests</h5>
+        <ol class="card-body">
+            <li>Computer Science/Data Science/Robotics/BioTech</li>
+            <li>Music</li>
+            <li>How technology affects us as a society.</li>
+        </ol>
+    </div>
+</div>
+<br />
+<div class="row">
+    <button class="btn btn-primary btn-block col-6" type="button" data-toggle="collapse" data-target=".myCollapser">Click Me to Read More!</button>
+    <br />
+    <button class="btn btn-danger btn-block col-6" type="button" data-toggle="modal" data-target="#myModal">Click Me for a Surprise!</button>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">You Have been Alerted!</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>This text is alerting you that you have been alerted.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

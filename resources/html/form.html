@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body style="padding-left: .5%; !important">
+<h1>Add New Article</h1>
+<form class="form">
+    <div class="form-row">
+        <div class="col-4">
+            <h4 style="margin-bottom: -10px; margin-top: 15px;"><label for="articleTitle">Article Title</label></h4>
+            <input type="text" class="form-control" id="articleTitle" placeholder="Title" />
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="col-4">
+            <h4 style="margin-bottom: -10px; margin-top: 10px;"><label for="authorName">Author Name</label></h4>
+            <input type="text" class="form-control" id="authorName" placeholder="Name" />
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="col-2">
+            <h4 style="margin-bottom: -5px; margin-top: 10px;"><label for="customFile">Upload Files</label></h4>
+            <div class="custom-file mb-3">
+                <input type="file" class="custom-file-input" id="customFile" name="filename">
+                <label class="custom-file-label" for="customFile">Choose file</label>
+            </div>
+        </div>
+        <div class="col-2 dropdown">
+            <h4 style="margin-bottom: -5px; margin-top: 10px;"><label for="dropdownMenuButton">Pages</label></h4>
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Select Pages
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Art</a>
+                <a class="dropdown-item" href="#">Computer Science</a>
+                <a class="dropdown-item" href="#">Music</a>
+            </div>
+        </div>
+    </div>
+    <div class="form-row">
+        <h4 class="col-12" style="margin-bottom: -10px; margin-top: 10px; padding-left: 0px;"><label class="col-12" for="textbox" style="padding-left: 0px;">Article Text</label></h4><br />
+            <textarea id="textbox" class="form-control col-4 rounded-0"></textarea>
+    </div>
+    <div class="form-row">
+        <h4 class="col-2" style="margin-bottom: 0px; margin-top: 10px; padding-left: 0px;">Select Tags</h4>
+        <h4 class="col-2" style="text-align:center; margin-bottom: 0px; margin-top: 10px">Visibility</h4>
+    </div>
+    <div class="form-row custom-control custom-checkbox">
+        <input class="custom-control-input" id="python" type="checkbox" name="python" value="python">
+        <label class="custom-control-label" style="margin-right: 2%;" for="python">Python</label>
+        <input class="custom-control-input" id="c++" type="checkbox" name="c++" value="c++">
+        <label class="custom-control-label" style="margin-right: 2%;" for="c++">C++</label>
+        <input class="custom-control-input" id="java" type="checkbox" name="java" value="java">
+        <label class="custom-control-label" style="margin-right: 2%;" for="java">Java</label>
+        <input class="custom-control-input" id="scala" type="checkbox" name="scala" value="scala">
+        <label class="custom-control-label" style="margin-right: 2%;" for="scala">Scala</label>
+        <input class="custom-control-input" id="perl" type="checkbox" name="perl" value="perl">
+        <label class="custom-control-label" style="margin-right: 2%;" for="perl">Perl</label>
+
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-secondary active">
+                <input type="radio" name="options" id="option1" autocomplete="off" checked> Public
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" id="option2" autocomplete="off"> Private
+            </label>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="col-4">
+            <h4 style="margin-bottom: 0px; margin-top: 10px;">Login to Finish Submitting</h4>
+        </div>
+    </div>
+    <div class="form-row">
+        <input type="text" placeholder="Username" name="username" class="form-control col-2">
+        <input type="password" placeholder="Password" name="password" class="form-control col-2">
+    </div>
+    <div class="form-row custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="rememberMe" name="remember">
+        <label class="custom-control-label" for="rememberMe">Remember Me</label>
+    </div>
+    <br />
+    <div class="form-row">
+        <button class="btn btn-md btn-primary" type="submit">Submit</button>
+    </div>
+</form>
+
+</body>
+</html>
